@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <a [routerLink]="['/']">Go back</a>
   <div class="row">
-    <div class="col-md-5" *ngFor="let img of (gallery|async) | slice:-2">
+    <div class="col-md-6" *ngFor="let img of (gallery|async) | slice:-2">
       <div class="card" [ngClass]="['item-'+color]">
         <img [src]="img.url" class="img img-responsive">
         <div class="card-body">
