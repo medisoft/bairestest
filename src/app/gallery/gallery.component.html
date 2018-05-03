@@ -1,0 +1,7 @@
+<a [routerLink]="['/']">Go back</a>
+<div class="card" [ngClass]="['item-'+color]" *ngFor="let img of (gallery|async) | slice:-2">
+  <img [src]="img.url" class="img img-responsive">
+  <div class="card-header">
+    <h4>{{img.title}}</h4>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+<div *ngFor="let a of (albums | async) | slice:-3 ; let i = index">
+  <div class="list-item">
+    <a [routerLink]="['/gallery', a.id, i]">{{a.title}}</a>
+  </div>
+</div>
